@@ -8,7 +8,7 @@
 
 a) Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi  sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ? (distribusi Geometrik)
 
-> Peluang Distribusi Geometrik dapat diperoleh dengan fungsi 'dgeom(x,p)' dengan 'x' = sukses pertama dan 'p' = peluang sukses
+> Peluang Distribusi Geometrik dapat diperoleh dengan fungsi `dgeom(x,p)` dengan `x` = sukses pertama dan `p` = peluang sukses
 
 ```R
 x = 3
@@ -23,7 +23,7 @@ peluang : 0.1024
 
 b) Mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi geometrik acak tersebut X = 3 ( distribusi geometrik acak () == 3 )
 
-> Distribusi Geometrik n data random dapat diperoleh menggunakan fungsi 'rgeom()' dan mean dapat diperoleh menggunakan fungsi 'mean()'
+> Distribusi Geometrik `n` data random dapat diperoleh menggunakan fungsi `rgeom()` dan mean dapat diperoleh menggunakan fungsi `mean()`
 
 ```R
 n = 10000
@@ -46,7 +46,7 @@ hasil dari poin a adalah nilai konstan, sedangkan hasil dari poin b bernilai ran
 
 d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 
->Histogram Distribusi Geomestrik dapat ditampilkan menggunakan fungsi 'hist()' sedangkan data random distribusinya dapat digenerate menggunakan fungsi 'rgeom()'
+>Histogram Distribusi Geomestrik dapat ditampilkan menggunakan fungsi `hist()` sedangkan data random distribusinya dapat digenerate menggunakan fungsi `rgeom()`
 
 ```R
 hist(rgeom(n,p), col = blues9)
@@ -58,8 +58,8 @@ hist(rgeom(n,p), col = blues9)
 
 e) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
 
-> - nilai rataan (μ) Distribusi Geometrik = '1/p'
-> - varian (σ²) Distribusi Geometrik = '(1-p)/p²'
+> - nilai rataan (μ) Distribusi Geometrik = `1/p`
+> - varian (σ²) Distribusi Geometrik = `(1-p)/p²`
 
 ```R
 mean = 1/p
@@ -84,7 +84,7 @@ output :
 
 a) Peluang terdapat 4 pasien yang sembuh.
 
->Peluang Distribusi Binomial dapat diperoleh menggunakan fungsi 'dbinom(x,n,p)' dengan 'x' = sembuh, 'n' = total pasien, dan 'p' = peluang sembuh
+>Peluang Distribusi Binomial dapat diperoleh menggunakan fungsi `dbinom(x,n,p)` dengan `x` = sembuh, `n` = total pasien, dan `p` = peluang sembuh
 
 ```R
 x = 4
@@ -100,7 +100,7 @@ peluang : 0.218199401946101
 
 b) Gambarkan grafik histogram berdasarkan kasus tersebut.
 
->Histogram Distribusi Binomial dapat ditampilkan menggunakan fungsi 'hist(x,n,p)' dengan 'x' = banyak data random yang digenerate, 'n' = jumlah sampel, dan 'p' = peluang sembuh 
+>Histogram Distribusi Binomial dapat ditampilkan menggunakan fungsi `hist(x,n,p)` dengan `x` = banyak data random yang digenerate, `n` = jumlah sampel, dan `p` = peluang sembuh 
 
 ```R
 hist(rbinom(4,20,0.2), col = blues9)
@@ -112,8 +112,8 @@ hist(rbinom(4,20,0.2), col = blues9)
 
 c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
 
-> - nilai rataan (μ) Distribusi Binomial = 'n*p'
-> - varian (σ²) Distribusi Binomial = 'n * p (1-p)'
+> - nilai rataan (μ) Distribusi Binomial = `n*p`
+> - varian (σ²) Distribusi Binomial = `n * p (1-p)`
 
 ```R
 mean = n*p
@@ -138,7 +138,7 @@ output :
 
 a) Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
 
->Peluang Distribusi Poisson dapat diperoleh menggunakan fungsi 'dpois(x,λ)' dengan 'x' = jumlah lahir dan 'λ' = rata-rata kelahiran
+>Peluang Distribusi Poisson dapat diperoleh menggunakan fungsi `dpois(x,λ)` dengan `x` = jumlah lahir dan `λ` = rata-rata kelahiran
 
 ```R
 x = 6
@@ -155,7 +155,7 @@ peluang :  0.128120143864584
 
 b) Simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini  selama setahun (n = 365)
 
->Histogram Distribusi Poisson dapat ditampilkan menggunakan fungsi 'hist()' sedangkan data kelahiran selama 'n' hari dapat digenerate menggunakan fungsi 'rpois(n,λ)'
+>Histogram Distribusi Poisson dapat ditampilkan menggunakan fungsi `hist()` sedangkan data kelahiran selama `n` hari dapat digenerate menggunakan fungsi `rpois(n,λ)`
 
 ```R
 n = 365
@@ -175,8 +175,8 @@ hasil dari poin a akan selalu bernilai konstan, sedangkan hasil dari poin b menu
 
 d) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
 
-> - nilai rataan (μ) Distribusi Poisson = 'λ'
-> - varian (σ²) Distribusi Poisson = 'λ'
+> - nilai rataan (μ) Distribusi Poisson = `λ`
+> - varian (σ²) Distribusi Poisson = `λ`
 
 ```R
 mean = λ
@@ -201,7 +201,7 @@ output :
 
 a) Fungsi Probabilitas dari Distribusi Chi-Square.
 
->Probabilitas Distribusi Chi-Square dapat diperoleh menggunakan fungsi 'dchisq(x,v)'
+>Probabilitas Distribusi Chi-Square dapat diperoleh menggunakan fungsi `dchisq(x,v)`
 
 ```R
 x = 2
@@ -218,7 +218,7 @@ pdf :  0.00766415502440505
 
 b) Histogram dari Distribusi Chi-Square dengan 100 data random.
 
->Histogram Distribusi Chi-Square dapat ditampilkan menggunakan fungsi 'hist()' sedangkan data random Distribusi Chi-Square dapat digenerate menggunakan fungsi 'rchisq()' 
+>Histogram Distribusi Chi-Square dapat ditampilkan menggunakan fungsi `hist()` sedangkan data random Distribusi Chi-Square dapat digenerate menggunakan fungsi `rchisq()`
 
 ```R
 n = 100
@@ -231,8 +231,8 @@ hist(rchisq(100,v,ncp=0), col = blues9)
 
 c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square.
 
-> - nilai rataan (μ) Distribusi Chi-Square = 'v'
-> - varian (σ²) Distribusi Chi-Square = '2*v'
+> - nilai rataan (μ) Distribusi Chi-Square = `v`
+> - varian (σ²) Distribusi Chi-Square = `2*v`
 
 ```R
 mean = v
@@ -257,7 +257,7 @@ output :
 
 a) Fungsi Probabilitas dari Distribusi Exponensial
 
->Probabilitas Distribusi Exponensial dapat diperoleh menggunakan fungsi 'dexp(x,λ)'
+>Probabilitas Distribusi Exponensial dapat diperoleh menggunakan fungsi `dexp(x,λ)`
 
 ```R
 λ = 3
@@ -273,7 +273,7 @@ output :
 
 b) Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
 
->Histogram Distribusi Exponensial dapat ditampilkan menggunakan fungsi 'hist()' sedangkan data random Distribusi Exponensial dapat digenerate menggunakan fungsi 'rexp(n,λ)' dengan 'n' = banyak data
+>Histogram Distribusi Exponensial dapat ditampilkan menggunakan fungsi `hist()` sedangkan data random Distribusi Exponensial dapat digenerate menggunakan fungsi `rexp(n,λ)` dengan `n` = banyak data
 
 ```R
 par(mfrow = c(2,2))
@@ -290,8 +290,8 @@ c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100
 - Gunakan set.seed(1)
 - Gunakan fungsi bawaan R
 
-> - nilai rataan (μ) Distribusi Exponensial dapat dicari menggunakan fungsi 'mean()'
-> - varian (σ²) Distribusi Eksponensial dapat dicari menggunakan fungsi 'var()'
+> - nilai rataan (μ) Distribusi Exponensial dapat dicari menggunakan fungsi `mean()`
+> - varian (σ²) Distribusi Eksponensial dapat dicari menggunakan fungsi `var()`
 
 ```R
 set.seed(1)
@@ -324,7 +324,7 @@ Keterangan :
 - X1 = 5
 - X2 = 6
 
->Probabilitas Distribusi Normal dapat diperoleh menggunakan fungsi 'dnorm(n,µ,sd)' dengan 'n' = jumlah data, 'µ' = mean, dan 'sd' = standar deviasi
+>Probabilitas Distribusi Normal dapat diperoleh menggunakan fungsi `dnorm(n,µ,sd)` dengan `n` = jumlah data, `µ` = mean, dan `sd` = standar deviasi
 
 ```
 n = 100
@@ -358,7 +358,7 @@ NRP_Nama_Probstat_{Nama Kelas}_DNhistogram
 - Contoh :
 312312312_Rola_Probstat_A_DNhistogram
 
->Histogram Distribusi Normal dapat ditampilkan menggunakan fungsi 'hist()' sedangkan data random Distribusi Normal dapat digenerate menggunakan fungsi 'rnorm()'
+>Histogram Distribusi Normal dapat ditampilkan menggunakan fungsi `hist()` sedangkan data random Distribusi Normal dapat digenerate menggunakan fungsi `rnorm()`
 
 ```R
 par(mfrow = c(1,1))
@@ -371,7 +371,7 @@ hist(rnorm(n,µ,sd), breaks = 50, main = "5025211142_Mohammad Zhafran Dzaky_Prob
 
 c) Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
 
-> - varian (σ²) Distribusi Normal dapat diperoleh menggunakan fungsi 'var()'
+> - varian (σ²) Distribusi Normal dapat diperoleh menggunakan fungsi `var()`
 
 ```R
 set.seed(1)
